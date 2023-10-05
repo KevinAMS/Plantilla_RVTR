@@ -18,7 +18,7 @@ export const ejemploSlice = createSlice({
     decrement: (state) => {
       state.value -= 1;
     },
-    addName: (state, action) => {
+    addName: (state, action:PayloadAction<string>) => {
       console.log(action);
       state.name = action.payload;
     },
